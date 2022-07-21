@@ -17,3 +17,16 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## What to do to make it work
+  * added docker-compose.yml for a postgres database
+  * mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
+  * add resulting the routes in router.ex
+  * mix phx.server, localhost:4000
+  * there will be a button to create the database and after that also to run the migrations if you haven't done it
+  * changed lib/chirp_web/live/post_live/index.html.heex
+  * ceated lib/chirp_web/live/post_live/form_component.html.heex
+  * add broadcast in lib/chirp/timeline.ex and call it in insert and update
+  * handle the subscribe in lib/chirp_web/live/post_live/index.ex
+  
+  
