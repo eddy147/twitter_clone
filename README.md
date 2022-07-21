@@ -1,5 +1,7 @@
 # Chirp
 
+This is the 1.6.11 version of https://www.youtube.com/watch?v=MZvmYaFkNJI
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
